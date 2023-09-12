@@ -1,0 +1,25 @@
+@media (max-width: 320px) {
+
+ .card {
+    max-width:100%;
+ }
+ .search input, .search button{
+    max-width: 70%;
+    max-height: 60%;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+ }
+ 
+ .col {
+    margin-right: 40px;
+ }
+ .col p {
+   font-size: 16px;
+ }
+
+ .col img {
+    width: 45%;
+
+ }
+}
