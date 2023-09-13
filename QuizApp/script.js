@@ -110,7 +110,7 @@ const questions = [
 
         function showScore(){
             resetState();
-            questionElement.innerHTML = 'You scored ${score} out of ${questions.lenght}!';
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
             nextButton.innerHTML = "Play Again";
             nextButton.style.display = "block";
         }
@@ -124,7 +124,8 @@ const questions = [
             }
         }
     nextButton.addEventListener("click", ()=>{
-        if(currentQuestionIndex < questions.lenght){
+        if(currentQuestionIndex < questions.length){
+            resetState();
             handleNextButton();
         }else{
             startQuiz();
