@@ -23,7 +23,7 @@
             <h1>Song Name</h1>
             <p>Song Author</p>
 
-            <audio controls>
+            <audio controls id="song">
                 <source src="" type="audio/mpeg">
             </audio>
 
@@ -34,7 +34,7 @@
                     <i class="fa-solid fa-backward"></i>
                 </div>
                 <div>
-                    <i class="fa-solid fa-play"></i>
+                    <i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i>
                 </div>
                 <div>
                     <i class="fa-solid fa-forward"></i>
@@ -43,5 +43,6 @@
 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
