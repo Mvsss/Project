@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonynous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AudioPlayer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="https://pbs.twimg.com/profile_images/1209909847673716737/bnCqzqpf_400x400.png" class="song-img">
+            <h1>Song Name</h1>
+            <p>Song Author</p>
+
+            <audio controls>
+                <source src="" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
