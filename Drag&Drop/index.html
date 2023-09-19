@@ -8,7 +8,9 @@
     <title>Drag&Drop</title>
 </head>
 <body>
+   
     <div class="container">
+        <h1>Default Drag&Drop</h1>
         <div id="left">
             <div class="list" draggable="true">List Item 1</div>
             <div class="list" draggable="true">List Item 2</div>
@@ -17,6 +19,19 @@
             
         </div>
         <div id="right"></div>
+    </div>
+    <div class="container">
+        <h1>Drag&Drop for Image</h1>
+        <label for="input-file" id="drop-area">
+            <input type="file" accept="image/*" id="input-file" hidden>
+            <div id="img-view">
+                <img src="icon.png">
+                <p>Drag and drop or click here <br> to upload image</p>
+                <span>Upload any images from desktop</span>
+            </div>
+        </label>
+
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
