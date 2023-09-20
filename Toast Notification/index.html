@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Toast Notification</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonynous"></script>
 </head>
 <body>
     <div class="buttons">
-        <button onclick="showToast()">Success</button>
-        <button onclick="showToast()">Error</button>
-        <button onclick="showToast()">Invalid</button>
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
     </div>
 
     <div id="toastBox">
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
