@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -41,10 +42,13 @@ body {
 .toast {
     width: 400px;
     height: 80px;
+    display: flex;
+    align-items: center;
     background: #fff;
     font-weight: 500;
     margin: 15px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    position: relative;
 }
 
 .toast i {
@@ -59,4 +63,32 @@ body {
 
 .toast.invalid i {
     color: orange;
+}
+
+.toast::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+}
+
+.toast.error::after {
+    background: red;
+    
+}
+
+.toast.invalid::after {
+    background: orange;
+    
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+
 }
